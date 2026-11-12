@@ -1,0 +1,19 @@
+# Gradle / build output
+.gradle/
+build/
+app/build/
+out/
+
+# Local machine config and signing — never commit
+local.properties
+signing.properties
+*.jks
+*.keystore
+
+# Sandbox-only helpers (offline maven repo, JVM test-runner jars)
+local-maven/
+tools/
+
+# Binaries
+*.apk
+*.aab

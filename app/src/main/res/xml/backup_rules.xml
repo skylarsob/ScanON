@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="file" path="vault.json" />
+    <include domain="file" path="groups.json" />
+    <include domain="sharedpref" path="scanon_prefs.xml" />
+</full-backup-content>

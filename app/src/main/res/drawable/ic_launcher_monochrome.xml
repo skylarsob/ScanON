@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single-colour silhouette for Android 13+ themed icons: the ring, the Iran
+     outline and the Milad tower from the colour icon, as strokes so the layer
+     is mostly transparent (never point <monochrome> at the full-colour PNG —
+     its alpha is a solid disc and the launcher shows a blank circle). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- the ring -->
+    <path
+        android:pathData="M21,54 a33,33 0 1,0 66,0 a33,33 0 1,0 -66,0"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="4"
+        android:fillColor="#00000000" />
+    <!-- Iran outline -->
+    <path
+        android:pathData="M44,31 L54,27 L61,30 L67,26 L73,33 L70.5,40 L76,46 L73,53 L65.5,56.5 L62.5,64 L53,67 L44.5,63 L38,56.5 L34.5,48.5 L37,40.5 L33.5,35 L39.5,29.5 Z"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="3"
+        android:fillColor="#00000000" />
+    <!-- Milad tower -->
+    <path
+        android:pathData="M79.5,76 L85.5,76 L83.4,46 L81.6,46 Z"
+        android:fillColor="#FF000000" />
+    <path
+        android:pathData="M82.5,46 L82.5,37"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M80.7,34.5 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0"
+        android:fillColor="#FF000000" />
+</vector>
