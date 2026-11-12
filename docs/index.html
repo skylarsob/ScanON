@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScanON — اسکن آن | ابزار تشخیص شبکه برای ایران</title>
+<meta name="description" content="اسکن آن (ScanON) — اسکنر آی پی، DNS، دامنه و تونل برای کاربران ایران، با اندازه گیری واقعی و صادقانه. دانلود، راهنمای استفاده و گزارش باگ.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#070b18; --bg2:#0b1230; --card:rgba(255,255,255,.055); --line:rgba(120,170,255,.22);
+    --txt:#eef3ff; --mut:#a9b8dd; --acc:#3f8cff; --acc2:#37c6ff; --good:#37d99a; --warn:#ffb84d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Vazirmatn',Tahoma,sans-serif;background:
+    radial-gradient(900px 500px at 85% -10%,rgba(63,140,255,.25),transparent 60%),
+    radial-gradient(700px 420px at 10% 0%,rgba(55,198,255,.14),transparent 55%),
+    linear-gradient(180deg,var(--bg2),var(--bg) 55%);
+    color:var(--txt);line-height:1.9}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header{text-align:center;padding:38px 0 8px}
+  header img{width:132px;height:132px;border-radius:50%;box-shadow:0 0 44px rgba(63,140,255,.55)}
+  h1{font-size:2.35rem;font-weight:900;margin:14px 0 2px}
+  h1 .en{color:var(--acc2)}
+  .tag{color:var(--mut);font-size:1.06rem;margin:0 auto;max-width:620px}
+  .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px 0 4px}
+  .btn{display:inline-block;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;
+    border:1px solid var(--line);color:var(--txt);background:var(--card);transition:.15s}
+  .btn:hover{transform:translateY(-1px);border-color:var(--acc)}
+  .btn.main{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04122e;border:none;
+    box-shadow:0 6px 24px rgba(63,140,255,.4)}
+  .ver{color:var(--mut);font-size:.9rem;margin-top:10px}
+  section{margin-top:38px}
+  h2{font-size:1.45rem;font-weight:900;border-right:4px solid var(--acc);padding-right:12px;margin:0 0 14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .card h3{margin:0 0 6px;font-size:1.08rem}
+  .card p{margin:0;color:var(--mut);font-size:.97rem}
+  .ico{font-size:1.5rem}
+  ol,ul{padding-right:22px;margin:8px 0}
+  li{margin:7px 0;color:#dbe6ff}
+  li b{color:#fff}
+  .note{background:rgba(255,184,77,.09);border:1px solid rgba(255,184,77,.35);border-radius:14px;padding:13px 17px;color:#ffe3b3}
+  .ok{background:rgba(55,217,154,.08);border:1px solid rgba(55,217,154,.3);border-radius:14px;padding:13px 17px;color:#c9f5e2}
+  code{background:rgba(255,255,255,.09);padding:1px 7px;border-radius:6px;font-size:.92em;direction:ltr;display:inline-block}
+  .report{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+  .report .card{text-align:center}
+  .report .btn{margin-top:10px}
+  footer{margin-top:52px;text-align:center;color:var(--mut);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px}
+  footer a,section a{color:var(--acc2)}
+  .ltr{direction:ltr;unicode-bidi:embed}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="ScanON">
+    <h1>اسکن آن <span class="en">ScanON</span></h1>
+    <p class="tag">ابزار تشخیص شبکه برای کاربران ایران؛ اسکن آی پی، DNS، دامنه و تونل های DNS، با اندازه گیری واقعی و صادقانه. عددی که می بینید زمان کامل یک تراکنش واقعی است، نه یک پینگ گول زننده.</p>
+    <div class="btns">
+      <a class="btn main" href="https://github.com/skylarsob/ScanON/releases/tag/v3.0.1">⬇️ دانلود نسخه 3.0.1</a>
+      <a class="btn" href="https://github.com/skylarsob/ScanON">صفحه پروژه در گیت هاب</a>
+      <a class="btn" href="https://github.com/skylarsob/ScanON/issues">گزارش باگ و پیشنهاد</a>
+    </div>
+    <p class="ver">نسخه فعلی: <b>3.0.1</b> — اندروید 8 به بالا — گوشی های arm64</p>
+  </header>
+
+  <section>
+    <h2>این برنامه چه کار می کند؟</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">🌐</div><h3>اسکنر آی پی</h3><p>رنج های آی پی (مثلا آی پی های کلودفلر) را با تست واقعی HTTPS امتحان می کند و تمیزترین و سریع ترین آی پی ها را پیدا می کند. رنج های آماده ایران هم داخل برنامه هست.</p></div>
+      <div class="card"><div class="ico">🧭</div><h3>اسکنر DNS</h3><p>سرورهای DNS را با هم مقایسه و رتبه بندی می کند. اگر یک سرور پاسخ دروغ بدهد (ربوده شدن DNS)، با هشدار مشخص می شود و پایین تر از سرورهای صادق می نشیند.</p></div>
+      <div class="card"><div class="ico">🔎</div><h3>اسکن دامنه</h3><p>یک دامنه را روی چند حل کننده بررسی می کند، اختلاف و مسموم بودن پاسخ ها را نشان می دهد و آی پی هایش را با SNI تست می کند.</p></div>
+      <div class="card"><div class="ico">🚇</div><h3>اسکن تونل</h3><p>برای پیدا کردن سرورهای سالم تونل های DNS با پروتکل های DNSTT، VayDNS، MasterDNS، Soar و TheFeed، با حالت خودکار برای همه پروتکل ها.</p></div>
+      <div class="card"><div class="ico">🗄️</div><h3>گاوصندوق آی پی</h3><p>آی پی های تمیزی که پیدا کرده اید را ذخیره می کند تا بعدا دوباره همه را با یک دکمه تست کنید.</p></div>
+      <div class="card"><div class="ico">📤</div><h3>خروجی و اشتراک گذاری</h3><p>نتیجه هر اسکن را می توانید کپی کنید یا به صورت فایل متنی خروجی بگیرید و برای بقیه بفرستید. از تنظیمات هم می شود پشتیبان گرفت و برگرداند.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>راهنمای سریع استفاده</h2>
+    <ol>
+      <li><b>نصب:</b> فایل APK را از <a href="https://github.com/skylarsob/ScanON/releases">بخش انتشارها در گیت هاب</a> دانلود و نصب کنید. موقع نصب، اندروید از شما اجازه نصب از این منبع را می خواهد؛ قبول کنید.</li>
+      <li><b>اسکن آی پی:</b> وارد بخش اسکن آی پی شوید، رنج یا لیست آی پی را وارد کنید (یا از رنج های آماده ایران استفاده کنید) و شروع را بزنید. نتایج بر اساس زمان میانه تراکنش کامل مرتب می شوند و زمان تک تک اجراها هم دیده می شود.</li>
+      <li><b>اسکن DNS:</b> سرورها را انتخاب کنید و اسکن بگیرید. تیک «صادق» یعنی سرور جواب درست می دهد؛ هشدار «ربوده شده» یعنی پاسخ های آن سرور قابل اعتماد نیست.</li>
+      <li><b>اسکن تونل:</b> پروتکل را انتخاب کنید یا روی حالت خودکار بگذارید و اسکن بگیرید. اگر دامنه تست وارد نکرده باشید، برنامه اول از شما تایید می گیرد.</li>
+      <li><b>ذخیره نتیجه:</b> روی هر نتیجه می توانید کپی یا خروجی بگیرید. آی پی های خوب را به گاوصندوق اضافه کنید تا گم نشوند.</li>
+      <li><b>راهنمای کامل:</b> داخل خود برنامه، بخش «راهنما» همه قسمت ها را با جزئیات توضیح داده است.</li>
+    </ol>
+    <div class="note">⚠️ <b>نکته مهم برای نسخه 3.0.1:</b> امضای این نسخه با نسخه 3.0.0 فرق می کند و روی آن نصب نمی شود. اگر 3.0.0 را دارید: اول از داخل برنامه (تنظیمات، پشتیبان گیری) یک فایل پشتیبان بگیرید، بعد نسخه قبلی را حذف کنید، 3.0.1 را نصب کنید و پشتیبان را برگردانید.</div>
+    <div class="ok" style="margin-top:12px">✅ نسخه 3.0.1 سه باگ نسخه قبلی را رفع کرده است: کرش هنگام تمام شدن سریع اسکن، کرش بعد از برگرداندن پشتیبان شامل تنظیمات، و خالی دیده شدن آیکن برنامه در تم های تک رنگ.</div>
+  </section>
+
+  <section>
+    <h2>گزارش باگ و ثبت پیشنهاد</h2>
+    <p style="color:var(--mut)">اگر جایی از برنامه درست کار نکرد، یا ایده ای برای بهتر شدنش دارید، از بخش Issues گیت هاب بنویسید. برای ثبت گزارش باید حساب گیت هاب داشته باشید (ساختنش رایگان است). موقع گزارش باگ این ها خیلی کمک می کند: مدل گوشی، نسخه اندروید، نسخه برنامه، و این که دقیقا چه کار کردید که مشکل پیش آمد. اگر از نتیجه یک اسکن خروجی گرفته اید، همان فایل را هم ضمیمه کنید.</p>
+    <div class="report">
+      <div class="card">
+        <div class="ico">🐞</div>
+        <h3>گزارش باگ</h3>
+        <p>برنامه کرش می کند، نتیجه اشتباه می دهد یا چیزی درست کار نمی کند؟</p>
+        <a class="btn" href="https://github.com/skylarsob/ScanON/issues/new?template=bug_report.md">ثبت گزارش باگ</a>
+      </div>
+      <div class="card">
+        <div class="ico">💡</div>
+        <h3>پیشنهاد و درخواست قابلیت</h3>
+        <p>قابلیتی کم است؟ ایده ای برای دقیق تر یا راحت تر شدن برنامه دارید؟</p>
+        <a class="btn" href="https://github.com/skylarsob/ScanON/issues/new?template=feature_request.md">ثبت پیشنهاد</a>
+      </div>
+    </div>
+    <p style="color:var(--mut)">همه گزارش ها و پیشنهادها را می توانید در <a href="https://github.com/skylarsob/ScanON/issues">صفحه Issues پروژه</a> ببینید و پیگیری کنید.</p>
+  </section>
+
+  <footer>
+    <p>ScanON — ساخته شده برای اینترنت آزادتر و اندازه گیری صادقانه<br>
+    <a href="https://github.com/skylarsob/ScanON">گیت هاب</a> ·
+    <a href="https://github.com/skylarsob/ScanON/releases">دانلودها</a> ·
+    <a href="https://github.com/skylarsob/ScanON/issues">Issues</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

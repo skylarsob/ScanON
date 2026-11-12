@@ -1,6 +1,10 @@
-# ScanON 2.4 — source
+# ScanON 3.0.1 — source
 
-Kotlin + Jetpack Compose rebuild of ScanON (package `com.skyler.scanon`, versionName 2.4 / versionCode 24).
+Kotlin + Jetpack Compose network diagnostics for users in Iran (package `com.skyler.scanon`, versionName 3.0.1 / versionCode 38).
+
+**📖 راهنمای فارسی و دانلود: https://skylarsob.github.io/ScanON/**
+**⬇️ Releases: https://github.com/skylarsob/ScanON/releases**
+**🐞 باگ و پیشنهاد: https://github.com/skylarsob/ScanON/issues**
 
 ## Build
 Requirements: JDK 17, Android SDK with platform `android-37` and build-tools 36+. Create `local.properties`
@@ -11,7 +15,7 @@ with `sdk.dir=/path/to/sdk`.
 ./gradlew assembleRelease -Pscanon.signingProps=/path/to/signing.properties
 ```
 `signing.properties` holds `storeFile`, `storePassword`, `keyAlias`, `keyPassword`. Without it the release
-APK is unsigned. Output: `app/build/outputs/apk/release/ScanON-2.4-arm64-v8a.apk` and `-universal.apk`.
+APK is unsigned. Output: `app/build/outputs/apk/release/ScanON-3.0.1-arm64-v8a.apk` and `-universal.apk`.
 
 On an aarch64 Linux host Google's aapt2 (x86-only) must be replaced: `build.sh` passes
 `-Pandroid.aapt2FromMavenOverride=<native aapt2>`; edit the paths at its top.

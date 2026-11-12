@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "📖 راهنمای فارسی ScanON"
+    url: https://skylarsob.github.io/ScanON/
+    about: "راهنمای نصب و استفاده از برنامه به فارسی"
+  - name: "⬇️ دانلود آخرین نسخه"
+    url: https://github.com/skylarsob/ScanON/releases
+    about: "قبل از گزارش باگ، مطمئن شوید آخرین نسخه را دارید"
